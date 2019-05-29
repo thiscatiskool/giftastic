@@ -11,7 +11,7 @@ for( i=0; i<topics.length; i++){
     var t= document.createTextNode(topics[i]);
     btn.appendChild(t);
     document.body.appendChild(btn);
-    buttonObject.val = topics[i]
+    //buttonObject.val = topics[i]
     }
 }
 window.onload = printBtn();
