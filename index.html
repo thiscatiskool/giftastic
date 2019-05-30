@@ -17,15 +17,11 @@
   <meta name="theme-color" content="#fafafa">
 </head>
 
-<body>
-  <!--[if IE]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
-
-  <!-- Add your site or application content here -->
+<body onload="printBtn()">
+  
   <input id="seachtext" type="text" placeholder="search">
   <button id="searchgifs" type="submit" onclick="getData()">Search</button>
-  <div class="buttons-div"></div>
+  <div id="buttonsdiv"></div>
   <p>Have fun with the Gifs</p>
   <div class="inner"></div>
   <script src="assets/js/scripts.js"></script>
