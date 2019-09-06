@@ -16,6 +16,9 @@ for( i=0; i<topics.length; i++){
 //assign the buttons a value based on the string associated with it in the array
     btn.value = topics[i];
     
+    console.log(btn)
+    console.log(t)
+    console.log(topics)
     }
     
 }

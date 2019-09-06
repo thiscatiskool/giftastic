@@ -1,41 +1,46 @@
-<!doctype html>
-<html class="no-js" lang="">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title></title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
-
-  <link rel="stylesheet" href="assets/css/normalize.css">
-  <link rel="stylesheet" href="assets/css/main.css">
-
-  <meta name="theme-color" content="#fafafa">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GifTastic Unit #6 Homework</title>
+    <!-- Link to Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <!-- Link to CSS -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <!-- Google Fonts -->
 </head>
 
-<body onload="printBtn()">
-  
-  <input id="seachtext" type="text" placeholder="search">
-  <button id="searchgifs" type="submit" onclick="getData()">Search</button>
-  <div id="buttonsdiv"></div>
-  <p>Have fun with the Gifs</p>
-  <div class="inner"></div>
-  <script src="assets/js/scripts.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
-  <script src="assets/js/plugins.js"></script>
-  <script src="assets/js/scripts.js"></script>
+<body class="bg-extra-dark-gray">
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+    <div class="container">
+        <h1><strong>GifTastic</strong><span>Search</span></h1>
+        <!-- Rendered buttons will get dumped here  -->
+        <div id="buttons-area"></div>
+
+        <form id="giphy-form">
+            <label for="gif-input-area"></label>
+            <input type="text" id="gif-input-area" placeholder="Search">
+            <!-- Button triggers new movie to be added -->
+            <input id="add-giphy" type="submit" value="Search">
+        </form>
+        <div >
+            <p>Click on the buttons above. When you get the results, click on any image
+                to allow the Giphy to play.<br />
+                If you don't see a gif you like, search for one of your choice, click on the new button and play
+                through the results.<span><strong> Enjoy!</strong></span> </p>
+        </div>
+    </div>
+    <div>
+        <!-- giphy results will be placed here -->
+        <div id="gifs-area"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+    <script src="./assets/js/script.js"></script>
 </body>
-
 </html>

@@ -1,2 +1,0 @@
-# giftastic
-API homework
